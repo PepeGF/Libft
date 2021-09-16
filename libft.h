@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 11:15:50 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/15 10:01:43 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/16 10:34:55 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <stdlib.h>
 
-int		ft_salpha(int c);
+int		ft_isalpha(int c); //test propio OK
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
