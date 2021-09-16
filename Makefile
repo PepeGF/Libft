@@ -7,10 +7,11 @@ OBJS 	= $(SRCS:.c=.o)
 #con qué compilador se complia, nosotros usamos gcc
 CC		= gcc
 #flags para compilar
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -I.
 
 #nada llama a CC y CFLAGS xq están incuidos en reglas implícitas al compilar
 #codigo fuente de C
+# -I. añade todas las librerías del directorio actual
 
 #comando para borrar
 RM		= rm -f
