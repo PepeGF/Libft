@@ -1,0 +1,2 @@
+Header desde ft_isalnum.c hasta ft_isprint con correo de alumno mal (.fr en
+lugar de .com)
