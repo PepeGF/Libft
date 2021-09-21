@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 11:08:13 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/21 10:35:55 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 14:59:14 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	aux = (unsigned char *)b; 
 	i = 0;
-	while (i < len)
+	while (i < len && aux[i] != '\0')
 	{
 		aux[i] = (unsigned char) c;
 		i++;
