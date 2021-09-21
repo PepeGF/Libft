@@ -6,27 +6,27 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:34:07 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/21 12:40:24 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 13:40:27 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
-#include <string.h>
+#include "libft.h"
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	if (s1[i] == '\0' && s2[i] == '\0')	//comrpobar si esto es necesario en MAC
+	if (s1[i] == '\0' && s2[i] == '\0')
 		return (0);
-	while ((s1 || s2) && i < n)	//n o n-1?
+	while (i < n)
 	{
-		if (s1[i] == s2[i])
-			i++;
-		else
-			return(s1[i] - s2[i]); //(unsigned char)
+		if (s1[i] != s2[i] || s1[i] == '\0' || s2[i] == '\0')
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		i++;
 	}
 	return (0);
 }
+/*
 #include <stdio.h>
 int main()
 {
@@ -59,3 +59,4 @@ int main()
 	printf("Mi función -> %i\n", ft_strncmp(s7, s8, n));
 	printf("Función orig -> %i\n", strncmp(s7, s8, n));
 }
+*/
