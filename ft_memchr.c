@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 16:27:09 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/20 20:29:27 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 10:37:00 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
+/*
 int	main()
 {
 	char str[] = "Aupa Atleti campeon";
@@ -40,4 +40,4 @@ int	main()
 	printf("%p\n",ft_memchr(str, 'e', 15));
 	return (0);
 }
-
+*/

@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 09:44:09 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/20 11:26:19 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 10:38:35 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	printf("%s\n", dst);	//quitar esta linea
 	return (srclen);
 }
-
+/*
 int	main()
 {
 	char	desti[] = "Aupa Atleti campeon";
@@ -42,3 +42,4 @@ int	main()
 	printf("%i\n", r);
 
 }
+*/

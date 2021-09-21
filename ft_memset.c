@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 11:08:13 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/17 14:21:59 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 10:35:55 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (aux);
 }
+/*
 #include <stdio.h>
 #include <string.h>
 int	main(void)
@@ -49,3 +50,4 @@ int	main(void)
 	printf("%p -> mi ft, %p -> orig\n",ft_memset(str, letra, 0), memset(str, letra, (0)));
 	printf("%i\n",memcmp(ft_memset(str, letra, 0),memset(str, letra, (0)),20));
 }
+*/

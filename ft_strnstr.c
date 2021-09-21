@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 12:15:51 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/20 13:41:28 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 10:39:40 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
+/*
 int	main()
 {
 	char big[] = "Aupa atleti campeon";
@@ -45,3 +45,4 @@ int	main()
 	printf("Mi función -> %s\n", ft_strnstr(big, little,len));
 //	printf("Fun origig -> %s\n", strnstr(big, little, len));
 }
+*/

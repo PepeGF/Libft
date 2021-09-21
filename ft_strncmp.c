@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 11:34:07 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/21 10:05:40 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 12:40:24 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
@@ -23,7 +23,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		if (s1[i] == s2[i])
 			i++;
 		else
-			return((unsigned char)s1[i] - (unsigned char)s2[i]);
+			return(s1[i] - s2[i]); //(unsigned char)
 	}
 	return (0);
 }

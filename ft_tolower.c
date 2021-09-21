@@ -6,11 +6,11 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 20:16:19 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/19 20:17:43 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 10:29:13 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(inc c)
+int	ft_tolower(int c)
 {
 	if ( c >= 'A' && c <= 'Z')
 		c += 32;

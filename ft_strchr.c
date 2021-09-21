@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 20:30:03 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/21 09:59:26 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/21 10:30:43 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@ char	*ft_strchr(const char *s, int c)
 	while (*s != '\0' && *s != c)
 		s++;
 	if (*s == c)
-		return (s);
-	return (NULL);	//cambiar null por 0
+		return ((char *)s);
+	return (0);	//cambiar null por 0
 }
 
 /*
