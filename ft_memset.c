@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 11:08:13 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/21 14:59:14 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/22 10:37:49 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,30 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t	i;
-	unsigned char *aux;
+	size_t			i;
+	 char	*aux;
+	 c = (unsigned char) c;
 
-	aux = (unsigned char *)b; 
+	aux = ( char *)b;
 	i = 0;
-	while (i < len && aux[i] != '\0')
+//	if (c == 0)
+//		return (0);
+	while (i < len)
 	{
-		aux[i] = (unsigned char) c;
+		aux[i] = c;
 		i++;
 	}
-	return (aux);
+	return (b);
 }
 /*
 #include <stdio.h>
 #include <string.h>
-int	main(void)
+int main()
 {
-	char str[] = "";
-	char letra = 'X';
-	char b1[3840];
-	int i = 0;
-	while (i < 18)
-	{b1[i]='B';
-		i++;}
+	char src[] = "/|\x12\xff\x09\0\x42\042\0\42|\\";
+	int size = 12;
 
-	char *r2 = memset(b1, 'A', 18);
-	printf("%s esta es r2\n",r2);
-	printf("Mi función: %s\n", ft_memset(str, letra, 0));
-	printf("---------------------------------\n");
-	printf("Función original: %s\n", memset(str, letra, (0)));
-
-	printf("Son diferentes si no es 0 ->%i\n",
-			strcmp(ft_memset(str, letra, 0), memset(str, letra, (0))));
-	printf("%p -> mi ft, %p -> orig\n",ft_memset(str, letra, 0), memset(str, letra, (0)));
-	printf("%i\n",memcmp(ft_memset(str, letra, 0),memset(str, letra, (0)),20));
+	printf("mia -> %p\n",(char *)ft_memset(src, '\0', size));
+	printf("orig -> %p\n", (char *)memset(src, '\0', size));
 }
 */

@@ -6,27 +6,22 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 16:27:09 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/21 10:37:00 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/22 11:19:25 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
-	char	*aux;
+	unsigned char	*aux;
 
 	i = 0;
-	aux = (char *)s;
-	printf("%p\n",aux);
-	while (aux[i] && i < n)
+	aux = (unsigned char *)s;
+	while (i < n)
 	{
-		write(1, &aux[i], 1);
-		if (aux[i] == c)
+		if (aux[i] == (unsigned char) c)
 			return (aux + i);
 		i++;
 	}
