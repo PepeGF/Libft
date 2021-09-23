@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 13:08:57 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/23 13:31:16 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/23 17:07:48 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *ptr;
+	void	*ptr;
 
 	ptr = (void *)malloc(size * count);
 	if (ptr == '\0')
