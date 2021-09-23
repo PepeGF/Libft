@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 11:41:15 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/23 10:54:42 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/23 12:35:26 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,39 +19,37 @@
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
-	char	*auxdst;
-	char	*auxsrc;
-	int		solape;
 
-	solape = 0;
-	i = 0;
-	auxdst = (char *)dst;
-	auxsrc = (char *)src;
 	if (!dst && !src)
-		return (dst);
-	while (i < len)
+		return (0);
+	
+	if ((size_t)dst - (size_t)src < len)
 	{
-		if (auxdst == auxsrc + i)
-			solape++;
-		i++;
+		i = len - 1;
+//		printf("\ni--> %lu\n",i);
+			while ((int)i >= 0 /*&& i < (int)len*/)
+			{
+//				printf("i -> %lu\tlen -> %lu\n",i,len);
+				((char *)dst)[i] = ((char *)src)[i];
+				i--;
+			}
 	}
-	printf("\n\nLong solape --> %i\n", solape);
-	i = 0;
-	if (solape == 0)
+	else
 	{
+		i = 0;
 		while (i < len)
 		{
-			auxdst[i] = auxsrc[i];
+			((char *)dst)[i] = ((char *)src)[i];
 			i++;
 		}
 	}
 	return (dst);
 }
-//*/
+/*/
 int main ()
 {
 	char dst[] = "Esta funcion es una autentica y tremendisima ";//45
-	char src[] = "puta mierda";//11
+	char src[] = "puta mierdaaaaaaaa";//11
 	char *aux = dst;
 	int size = 7;
 int i = 0;
@@ -68,7 +66,7 @@ int i = 0;
 	printf("src -> %s\n", src);
 	printf("----------------------------------------\n");
 }
-/*
+
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
