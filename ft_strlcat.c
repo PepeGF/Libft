@@ -6,17 +6,17 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 16:42:39 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/22 22:12:16 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/23 09:47:34 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
-#include <bsd/string.h>//solo para linux
+//#include <bsd/string.h>//solo para linux
 // compilar con -lbsd
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	j;
@@ -27,15 +27,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	j = 0;
 	lendst = ft_strlen(dst);
 	lensrc = ft_strlen(src);
-	if (size < lendst + lensrc)
-		return (size + lensrc);
-	while (src[j] && i <= size )
+	if (dstsize < lendst/* + lensrc*/)
+		return (dstsize + lensrc);
+	while (src[j] && i + 1 < dstsize )
 	{
 		dst[i] = src[j];
 		i++;
 		j++;
-		if (j == lensrc-1 )
-			j = 0;
+	//	if (j == lensrc-1 )
+	//		j = 0;
 	}
 //	printf("i --> %li\n", i);
 	dst[i] = '\0';
@@ -44,10 +44,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 int main ()
 {
-	char dst[] = "Esta funcion es una autentica y tremendisima ";
-	char src[] = "puta mierda";
+	char dst[] = "Esta funcion es una autentica y tremendisima ";//45
+	char src[] = "puta mierda";//11
 
-	int size = 70;
+	int size = 46;
 //	int largo;
 	printf("size: %i\n",size); 
 	printf("len dst = %li\n", strlen(dst));
