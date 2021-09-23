@@ -6,9 +6,11 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 11:16:06 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/17 11:20:54 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/23 14:06:55 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
