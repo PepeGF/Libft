@@ -6,9 +6,11 @@
 /*   By: josgarci <josgarci@student.42madrid.f      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 09:30:25 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/17 11:55:03 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/23 20:20:46 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libtf.h"
 
 int	ft_isprint(int c)
 {
