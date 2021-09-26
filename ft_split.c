@@ -6,12 +6,11 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 16:53:24 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/26 14:18:59 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/26 14:24:21 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_count_substr(char const *s, char c);
 static void	ft_memasig(char *aux, char c, char **ptr);
