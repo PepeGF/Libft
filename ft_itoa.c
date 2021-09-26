@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/26 14:24:04 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/26 17:44:12 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/26 17:46:28 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,12 +82,3 @@ static int	ft_num_len(int n)
 	}
 	return (digits);
 }
-/*
-int	main(void)
-{
-	printf("%s\n", ft_itoa(-2143648));
-	return (0);
-}
-*/
-// -2147483648
-//  2147483647
