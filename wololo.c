@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   wololo.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/26 20:13:17 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/27 17:59:01 by josgarci         ###   ########.fr       */
+/*   Created: 2021/09/17 11:37:41 by josgarci          #+#    #+#             */
+/*   Updated: 2021/09/27 13:16:45 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+int main()
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	int X = 42;
+	return (X);
 }

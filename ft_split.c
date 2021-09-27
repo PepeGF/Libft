@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 16:53:24 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/26 14:24:21 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/09/27 17:54:24 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,10 @@ char	**ft_split(char const *s, char c)
 	char	*aux;
 	int		num_substr;
 	char	**ptr;
-	int		len_aux;
 
 	if (!s)
 		return (ptr = NULL);
 	aux = (char *)s;
-	len_aux = ft_strlen(aux);
 	num_substr = ft_count_substr(s, c);
 	ptr = (char **)malloc(sizeof(char *) * (num_substr + 1));
 	if (!ptr)
