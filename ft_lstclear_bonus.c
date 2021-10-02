@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/28 12:35:15 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/30 13:59:58 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/10/01 22:26:01 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	while (*lst)
 	{
 		temp = (*lst)->next;
-	//	ft_lstdelone(*lst, del);
-		del((*lst)->content);
-		free(*lst);
+		ft_lstdelone(*lst, del);
 		*lst = temp;
 	}
 	*lst = 0;

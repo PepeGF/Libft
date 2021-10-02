@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/28 00:34:43 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/30 14:14:19 by josgarci         ###   ########.fr       */
+/*   Created: 2021/10/01 22:24:18 by josgarci          #+#    #+#             */
+/*   Updated: 2021/10/01 22:24:21 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
-		return (NULL);
+		return (0);
 	while (lst->next)
 		lst = lst->next;
 	return (lst);

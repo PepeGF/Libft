@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/28 13:52:22 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/30 14:22:08 by josgarci         ###   ########.fr       */
+/*   Created: 2021/10/01 22:23:18 by josgarci          #+#    #+#             */
+/*   Updated: 2021/10/01 22:23:27 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!lst || !f)
+	if (!lst)
 		return ;
-	while (lst->next)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;
