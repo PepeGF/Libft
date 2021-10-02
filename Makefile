@@ -40,7 +40,6 @@ fclean: clean
 
 re:	fclean $(NAME)
 	
-
-#rebonus: fclean bonus
+rebonus: fclean bonus
 
 .PHONY: all bonus clean fclean re 

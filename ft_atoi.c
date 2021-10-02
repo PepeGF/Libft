@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 11:21:29 by josgarci          #+#    #+#             */
-/*   Updated: 2021/10/01 21:02:03 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/10/02 12:31:51 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,3 @@ int	ft_atoi(const char *str)
 	n = check_overflows(n, neg);
 	return (n * neg);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	printf("%u\n", ft_atoi("-99223372036854775808"));
-	printf("%u\n", atoi("-99223372036854775808"));
-	
-}
-*/

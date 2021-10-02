@@ -6,13 +6,11 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 12:36:37 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/24 17:23:56 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/10/02 14:00:34 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
