@@ -6,17 +6,15 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 20:37:16 by josgarci          #+#    #+#             */
-/*   Updated: 2022/01/16 11:56:40 by josgarci         ###   ########.fr       */
+/*   Updated: 2022/02/07 18:48:15 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s);
-
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	int	i;
 
 	i = ft_strlen(s);
 	while (i >= 0)
