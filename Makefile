@@ -1,3 +1,20 @@
+### --- COLORS --- ###
+
+RED		= '\033[31m'
+GREEN	= '\033[1;32m'
+YELLOW	= '\033[33m'
+BLUE	= '\033[34m'
+PURPLE	= '\033[1;35m'
+CIAN	= '\033[36m'
+WHITE	= '\033[37m'
+NONE	= '\033[0m'
+
+NAME = libft.a
+
+SRCS_PATH = ./
+INCS_PATH = inc/
+BIN_PATH = bin/
+
 SRCS    =     ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
               ft_strlen.c ft_memset.c ft_bzero.c ft_memchr.c ft_strchr.c \
               ft_strlcpy.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c \
@@ -10,9 +27,7 @@ SRCS    =     ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
               ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
               ft_lstclear.c ft_lstiter.c ft_lstmap.c \
 
-OBJS = $(SRCS:.c=.o)
-
-NAME = libft.a
+OBJS = $(SRCS:%.c=bin/%.o)
 
 CC = gcc
 
@@ -20,22 +35,30 @@ CFLAGS = -Wall -Werror -Wextra
 
 RM = rm -f
 
-all:	$(NAME)	
+all: $(NAME)	
 
-%.o:%.c
-	@$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+$(BIN_PATH)%.o: $(SRCS_PATH)%.c
+	@mkdir -p $(BIN_PATH)
+	@$(CC) $(CFLAGS) -c $< -o $@
 	
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $?
 	@ranlib $(NAME)
-	@echo $(NAME) ": successfully compiled"
+	@echo $(GREEN)$(NAME) ": successfully compiled"$(NONE)
 
 clean:	
 	@$(RM) $(OBJS)
+	@rm -rf $(BIN_PATH)
+	@echo $(RED)"[Object Files Deleted]"$(NONE)
 
 fclean: clean
 	@$(RM) $(NAME)
+	@echo $(RED)"[Executable File Deleted]"$(NONE)
 
-re:	fclean $(NAME)
+re:	fclean
+	@sleep 2
+	@clear
+	@echo $(PURPLE)"Compiling $(NAME)"$(NONE)
+	@$(MAKE)
 	
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re
